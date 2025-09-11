@@ -16,8 +16,9 @@ class Program
 
     static void Main()
     {
+        Console.Title = "TaklTalk*";
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("[*] TaklTalk v0.5\n");
+        Console.WriteLine("[*] TaklTalk v1.0\n");
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.Magenta;
 
@@ -50,7 +51,18 @@ class Program
 
         TcpListener listener = new TcpListener(IPAddress.Any, Port);
         listener.Start();
-        Console.WriteLine($"Server started on port {Port}. Waiting for clients...");
+
+        // Print the server IP addresses
+        Console.WriteLine($"\nServer started on port {Port}. Listening on:");
+        var host = Dns.GetHostEntry(Dns.GetHostName());
+        foreach (var ip in host.AddressList)
+        {
+            if (ip.AddressFamily == AddressFamily.InterNetwork) // IPv4 only
+            {
+                Console.WriteLine($"  {ip}:{Port}");
+            }
+        }
+        Console.WriteLine("Waiting for clients...\n");
 
         _ = Task.Run(() => AcceptClientsAsync(listener));
 
@@ -98,6 +110,7 @@ class Program
         listener.Stop();
         Console.WriteLine("Server shut down.");
     }
+
 
     static async Task AcceptClientsAsync(TcpListener listener)
     {
