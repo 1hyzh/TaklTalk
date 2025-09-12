@@ -37,7 +37,7 @@ Then you should make the binary executable by doing this:
 ```bash
 chmod +x TaklTalk-1.0-linux-x64
 ```
-###arm64
+### arm64
 
 ```bash
 chmod +x TaklTalk-1.0-linux-arm64
@@ -50,7 +50,7 @@ after that you just run the program:
 ```bash
 ./TaklTalk-1.0-linux-x64
 ```
-###arm64
+### arm64
 
 ```bash
 ./TaklTalk-1.0-linux-arm64
