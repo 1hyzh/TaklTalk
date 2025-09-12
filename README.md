@@ -29,3 +29,29 @@ wget https://github.com/1hyzh/TaklTalk/releases/download/1.0/TaklTalk-1.0-linux-
 ```bash
 wget https://github.com/1hyzh/TaklTalk/releases/download/1.0/TaklTalk-1.0-linux-arm64
 ```
+
+Then you should make the binary executable by doing this:
+
+### x64
+
+```bash
+chmod +x TaklTalk-1.0-linux-x64
+```
+###arm64
+
+```bash
+chmod +x TaklTalk-1.0-linux-arm64
+```
+
+after that you just run the program:
+
+### x64
+
+```bash
+./TaklTalk-1.0-linux-x64
+```
+###arm64
+
+```bash
+./TaklTalk-1.0-linux-arm64
+```
