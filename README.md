@@ -15,6 +15,25 @@ The program should look like this when you open it:
 
 # How to open in linux
 
+## Using the install script
+
+just use the script if you want.
+
+### x64
+
+```bash
+wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/heads/main/linux-x64-download.sh && ./linux-x64-download.sh
+```
+
+### arm64
+
+```bash
+wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/heads/main/linux-arm64-download.sh && ./linux-arm64-download.sh
+```
+
+
+## Manual way
+
 To open TaklTalk in linux first you need to download the binary or build it yourself.
 To download it you can either download it from releases or pasting this in your terminal:
 
