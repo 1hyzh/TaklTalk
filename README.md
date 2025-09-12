@@ -22,13 +22,13 @@ just use the script if you want.
 ### x64
 
 ```bash
-wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/heads/main/linux-x64-download.sh && ./linux-x64-download.sh
+wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/heads/main/linux-x64-download.sh && chmod +x linux-x64-download.sh && ./linux-x64-download.sh
 ```
 
 ### arm64
 
 ```bash
-wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/heads/main/linux-arm64-download.sh && ./linux-arm64-download.sh
+wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/heads/main/linux-arm64-download.sh && chmod +x linux-arm64-download.sh && ./linux-arm64-download.sh
 ```
 
 
