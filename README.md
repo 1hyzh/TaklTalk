@@ -11,3 +11,21 @@ The program should look like this when you open it:
 ### You can choose either to host or connect to a server
 
 ### To connect between two computers one should join the servers IP adress (can be found in ipconfig in windows or hostname -I in linux or directly in the application)
+
+
+# How to open in linux
+
+To open TaklTalk in linux first you need to download the binary or build it yourself.
+To download it you can either download it from releases or pasting this in your terminal:
+
+### x64
+
+```bash
+wget https://github.com/1hyzh/TaklTalk/releases/download/1.0/TaklTalk-1.0-linux-x64
+```
+
+### arm64
+
+```bash
+wget https://github.com/1hyzh/TaklTalk/releases/download/1.0/TaklTalk-1.0-linux-arm64
+```
