@@ -109,7 +109,13 @@ rm Program.cs && wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/head
 after that publish the project with this line, remember to replace the linux-x64 with the architectury you need
 
 ```bash
-dotnet publish -c Release -r linux-x64 --self-contained true /p:PublishSingleFile=true /p:PublishTrimmed=true /p:IncludeNativeLibrariesForSelfExtract=true && cd ./bin/Release/net8.0/linux-x64/publish
+dotnet publish -c Release -r linux-x64 --self-contained true /p:PublishSingleFile=true /p:PublishTrimmed=true /p:IncludeNativeLibrariesForSelfExtract=true && cd ./bin/Release/net8.0/linux-x64/publish 
+```
+
+and then open it by doing
+
+```bash
+./TaklTalk
 ```
 
 
