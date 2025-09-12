@@ -74,3 +74,46 @@ after that you just run the program:
 ```bash
 ./TaklTalk-1.0-linux-arm64
 ```
+
+
+# To build it yourself:
+
+## Linux
+
+### You should have installed the dotnet-sdk packet for doing this, to install it you can do
+
+```bash
+sudo apt install dotnet-sdk-8.0
+```
+
+or
+
+```bash
+sudo snap install dotnet-sdk --classic
+```
+
+First you should create a console project like this:
+
+```bash 
+dotnet new console -o TaklTalk && cd TaklTalk
+```
+
+Then delete the default Program.cs and replace it with the one in this repo:
+
+```bash
+rm Program.cs && wget https://raw.githubusercontent.com/1hyzh/TaklTalk/refs/heads/main/Program.cs
+```
+
+(you can double check that the file has been replaced by doing 'cat Program.cs')
+
+after that publish the project with this line, remember to replace the linux-x64 with the architectury you need
+
+```bash
+dotnet publish -c Release -r linux-x64 --self-contained true /p:PublishSingleFile=true /p:PublishTrimmed=true /p:IncludeNativeLibrariesForSelfExtract=true && cd ./bin/Release/net8.0/linux-x64/publish
+```
+
+
+## Windows
+
+Download Visual Studio and install the .NET Development package
+After that create C# Console app project, replace the Program.cs with the one in this repo and you can either just click run (which will output various files) or publish into a folder (if you do it right will output only one file)
