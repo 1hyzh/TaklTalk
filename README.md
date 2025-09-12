@@ -1,4 +1,4 @@
-# TaklTalk
+# [*]TaklTalk
 ### Talk in a local connection
 
 The program should look like this when you open it:
